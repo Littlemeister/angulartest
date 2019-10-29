@@ -1,0 +1,18 @@
+<h1>Exchangerate webpage</h1>
+
+<h2>The exchangerate from {{fromCurrency}} to {{toCurrency}} is right now: {{exchangeRate}}</h2>
+
+<h2>Here is some more stats:</h2>
+
+<div *ngFor="let data of apiData | keyvalue">
+    Key: <b>{{data.key}}</b> and Value: <b>{{data.value}}</b>
+</div>
+
+<mat-progress-bar
+    class="example-margin"
+    [color]="color"
+    [mode]="mode"
+    [value]="value"
+    [bufferValue]="bufferValue">
+>
+</mat-progress-bar>
